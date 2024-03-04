@@ -16,7 +16,9 @@ export default function Home() {
           </div>
         ):(
           <div className="w-full flex justify-center pt-32">
-
+            <h1 className="font-bold text-3xl">
+              Please use the input field below
+            </h1>
           </div>
         )}
     </div>
