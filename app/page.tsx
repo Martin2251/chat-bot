@@ -21,6 +21,9 @@ export default function Home() {
             </h1>
           </div>
         )}
+        <form onSubmit={handleSubmit} className="p-5 fixed bottom-0 left-0 w-[75%]">
+
+        </form>
     </div>
   );
 }
