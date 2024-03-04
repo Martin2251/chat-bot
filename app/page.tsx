@@ -1,6 +1,7 @@
 "use client"
 
 import {useChat} from "ai/react"
+import Textarea from "react-textarea-autosize"
 
 export default function Home() {
   const {messages, input, handleInputChnage, handleSubmit} = useChat(
@@ -21,8 +22,10 @@ export default function Home() {
             </h1>
           </div>
         )}
-        <form onSubmit={handleSubmit} className="p-5 fixed bottom-0 left-0 w-[75%]">
-
+        <form onSubmit={handleSubmit} className="p-5 fixed bottom-0 left-0 w-[75%] mx-auto right-0 bg-neutral-600">
+          <div className="relative flex items-center">
+            <Textarea tabIndex={0} required rows={1} value={input} onChange={handleInputChnage}/>
+          </div>
         </form>
     </div>
   );
